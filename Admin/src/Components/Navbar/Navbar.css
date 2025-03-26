@@ -1,0 +1,81 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    box-shadow: 0 1px 3px -2px #000;
+    margin-bottom: 1px;
+    background: white;
+}
+
+.nav-profile{
+    height: 60px;
+    width: 60px;
+}
+
+.navbar-left{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-left h1{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.navbar h1 span{
+    display: block;
+    font-size: 16px;
+    color: #ff4141;
+}
+
+@media(max-width: 800px)
+{
+    .navbar {
+        padding: 10px 20px;  /* Giảm padding cho Navbar */
+    }
+
+    .navbar-left {
+        flex-direction: row;  /* Đặt các phần tử theo chiều dọc */
+        align-items: center;     /* Căn giữa các phần tử */
+    }
+
+    .navbar-left h1 {
+        font-size: 18px;  /* Giảm kích thước chữ cho tiêu đề */
+        text-align: center;  /* Căn giữa chữ */
+    }
+
+    .navbar h1 span {
+        font-size: 14px;  /* Giảm kích thước chữ của span */
+    }
+
+    .nav-profile {
+        height: 50px;   /* Giảm kích thước profile */
+        width: 50px;
+    }
+}
+
+@media(max-width: 500px) {
+    .navbar {
+        padding: 8px 15px;  /* Giảm padding thêm cho không gian nhỏ hơn */
+    }
+
+    .navbar-left {
+        flex-direction: column;  /* Đặt các phần tử theo chiều dọc */
+        align-items: center;     /* Căn giữa các phần tử */
+    }
+
+    .navbar-left h1 {
+        font-size: 16px;  /* Giảm kích thước chữ cho tiêu đề */
+        text-align: center;  /* Căn giữa chữ */
+    }
+
+    .navbar h1 span {
+        font-size: 12px;  /* Giảm kích thước chữ của span */
+    }
+
+    .nav-profile {
+        height: 40px;   /* Giảm kích thước profile */
+        width: 40px;
+    }
+}
